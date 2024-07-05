@@ -22,7 +22,7 @@ const config = {
   
   AUTO_REJECT_CALLS: process.env.AUTO_REJECT_CALLS !== undefined ? process.env.REJECT_CALL === 'true' : true, 
   NOT_ALLOW: process.env.NOT_ALLOW !== undefined ? process.env.NOT_ALLOW === 'false' : false,
-  MODE: process.env.MODE || 'public',
+  MODE: process.env.MODE !== undefined ? process.env.MODE === 'public': true,
   PREFIX: process.env.PREFIX || '.',
   PORT: process.env.PORT || "5000", /* Where App Will Listen On */
   OWNER_NAME: process.env.OWNER_NAME || "ᐇ 𝗝ͨ͋͋͋͋𝗜𝗧𝗛𝗨⃞𝗟𝗔 𝗕̞̞̞̞̞̞̞̞̞𝗛͢𝗔͒͒͒͒𝗦𝗜ͯ𝗧ͭ𝗛ͫ𝗔͚͚͚͚ ッ",
